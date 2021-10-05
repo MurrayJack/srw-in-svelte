@@ -1,11 +1,15 @@
 <script lang="ts">
     import type { Module } from "$lib/types";
-	export let module: Module
+    import Dashboard from "$lib/icons/Dashboard.svelte"
+    
+    export let module: Module
 </script>
 
 <div>
     <a sveltekit:prefetch href={`/${module.id}/${module.subModules[0].id}`}>
-        <div></div>
+        <div>
+            <Dashboard />
+        </div>
         <div>{module.caption}</div>
     </a>
 </div>

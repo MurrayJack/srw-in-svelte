@@ -10,7 +10,15 @@
     export let data: any
 </script>
 
-<div>loader...</div>
+<article>
+    <div>loader...</div>
 
-<div>{data.module}</div>
-<div>{data.submodule}</div>
+    <div>{data.module}</div>
+    <div>{data.submodule}</div>
+</article>
+
+<style>
+    article {
+        padding: 16px;
+    }
+</style>
